@@ -41,7 +41,7 @@ app.post('/register', (req, res) => {
 });
 
 app.get('/profile/:id', (req, res) => {
-	msWriteProfilerMark.handleProfileGet(req, res, db);
+	profile.handleProfileGet(req, res, db);
 });
 
 app.put('/image', (req, res) => {
